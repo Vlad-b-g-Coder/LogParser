@@ -1,0 +1,32 @@
+<UserControl x:Class="LogParser.Wpf.Controls.StatusBadge"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             Width="24" Height="24" Loaded="OnLoaded">
+    <Viewbox Stretch="Uniform">
+        <Grid Width="24" Height="24">
+            <Ellipse x:Name="Circle" Fill="#9CA3AF"/>
+
+            <!-- зелёная галочка -->
+            <Path x:Name="CheckMark" Data="M6.5,12.5 L10.5,16.5 L17.5,8" Stroke="White" StrokeThickness="2.6"
+                  StrokeStartLineCap="Round" StrokeEndLineCap="Round" StrokeLineJoin="Round"/>
+            <!-- красный крестик -->
+            <Path x:Name="CrossMark" Data="M8,8 L16,16 M16,8 L8,16" Stroke="White" StrokeThickness="2.6"
+                  StrokeStartLineCap="Round" StrokeEndLineCap="Round" Visibility="Collapsed"/>
+            <!-- жёлтый восклицательный знак -->
+            <Path x:Name="BangMark" Data="M12,6.5 L12,13" Stroke="White" StrokeThickness="2.6"
+                  StrokeStartLineCap="Round" StrokeEndLineCap="Round" Visibility="Collapsed"/>
+            <Ellipse x:Name="BangDot" Width="2.8" Height="2.8" Fill="White" Margin="0,0,0,4.5"
+                     VerticalAlignment="Bottom" Visibility="Collapsed"/>
+            <!-- серая точка: ещё не проверялся -->
+            <Ellipse x:Name="PendingDot" Width="7" Height="7" Fill="White" Visibility="Collapsed"/>
+            <!-- синий крутящийся индикатор загрузки -->
+            <Path x:Name="Spinner" Data="M12,5 A7,7 0 1 1 5,12" Stroke="White" StrokeThickness="2.6"
+                  StrokeStartLineCap="Round" StrokeEndLineCap="Round" RenderTransformOrigin="0.5,0.5"
+                  Visibility="Collapsed">
+                <Path.RenderTransform>
+                    <RotateTransform x:Name="Spin" Angle="0"/>
+                </Path.RenderTransform>
+            </Path>
+        </Grid>
+    </Viewbox>
+</UserControl>

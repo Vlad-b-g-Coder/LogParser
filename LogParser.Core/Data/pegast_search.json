@@ -1,0 +1,228 @@
+{
+ "resultItems": [
+  {
+   "date": "2026-12-13T00:00:00",
+   "nights": 2,
+   "transitNights": 1,
+   "filtersInfo": {
+    "mainHotelName": "Empire Hotel Aqua Park"
+   },
+   "mainHotel": {
+    "hotelId": 12713,
+    "rating": 3
+   },
+   "holidayPrice": {
+    "paymentCurrency": {
+     "formatted": "317 474 ₽",
+     "raw": 317473.43,
+     "parts": {
+      "majorUnit": "317 474",
+      "decimalSeparator": ",",
+      "minorUnit": "",
+      "currency": {
+       "symbol": "₽",
+       "symbolPosition": 1,
+       "hasSpaceBetweenSymbolAndAmount": true
+      }
+     }
+    }
+   }
+  },
+  {
+   "date": "2026-12-13T00:00:00",
+   "nights": 2,
+   "transitNights": 1,
+   "filtersInfo": {
+    "mainHotelName": "Sun & Sea Hotel Hurghada"
+   },
+   "mainHotel": {
+    "hotelId": 2214055,
+    "rating": 3
+   },
+   "holidayPrice": {
+    "paymentCurrency": {
+     "formatted": "319 033 ₽",
+     "raw": 319032.04,
+     "parts": {
+      "majorUnit": "319 033",
+      "decimalSeparator": ",",
+      "minorUnit": "",
+      "currency": {
+       "symbol": "₽",
+       "symbolPosition": 1,
+       "hasSpaceBetweenSymbolAndAmount": true
+      }
+     }
+    }
+   }
+  },
+  {
+   "date": "2026-12-13T00:00:00",
+   "nights": 2,
+   "transitNights": 1,
+   "filtersInfo": {
+    "mainHotelName": "Moreno Horizon Spa & Resort"
+   },
+   "mainHotel": {
+    "hotelId": 12563,
+    "rating": 4
+   },
+   "holidayPrice": {
+    "paymentCurrency": {
+     "formatted": "319 141 ₽",
+     "raw": 319140.98,
+     "parts": {
+      "majorUnit": "319 141",
+      "decimalSeparator": ",",
+      "minorUnit": "",
+      "currency": {
+       "symbol": "₽",
+       "symbolPosition": 1,
+       "hasSpaceBetweenSymbolAndAmount": true
+      }
+     }
+    }
+   }
+  },
+  {
+   "date": "2026-12-13T00:00:00",
+   "nights": 2,
+   "transitNights": 1,
+   "filtersInfo": {
+    "mainHotelName": "Sand Beach Hotel"
+   },
+   "mainHotel": {
+    "hotelId": 12715,
+    "rating": 3
+   },
+   "holidayPrice": {
+    "paymentCurrency": {
+     "formatted": "319 422 ₽",
+     "raw": 319421.69,
+     "parts": {
+      "majorUnit": "319 422",
+      "decimalSeparator": ",",
+      "minorUnit": "",
+      "currency": {
+       "symbol": "₽",
+       "symbolPosition": 1,
+       "hasSpaceBetweenSymbolAndAmount": true
+      }
+     }
+    }
+   }
+  },
+  {
+   "date": "2026-12-13T00:00:00",
+   "nights": 2,
+   "transitNights": 1,
+   "filtersInfo": {
+    "mainHotelName": "Empire Beach Aqua Park"
+   },
+   "mainHotel": {
+    "hotelId": 12711,
+    "rating": 3
+   },
+   "holidayPrice": {
+    "paymentCurrency": {
+     "formatted": "319 422 ₽",
+     "raw": 319421.69,
+     "parts": {
+      "majorUnit": "319 422",
+      "decimalSeparator": ",",
+      "minorUnit": "",
+      "currency": {
+       "symbol": "₽",
+       "symbolPosition": 1,
+       "hasSpaceBetweenSymbolAndAmount": true
+      }
+     }
+    }
+   }
+  },
+  {
+   "date": "2026-12-13T00:00:00",
+   "nights": 2,
+   "transitNights": 1,
+   "filtersInfo": {
+    "mainHotelName": "New Eagles Aqua Park Resort"
+   },
+   "mainHotel": {
+    "hotelId": 505116409,
+    "rating": 4
+   },
+   "holidayPrice": {
+    "paymentCurrency": {
+     "formatted": "319 422 ₽",
+     "raw": 319421.69,
+     "parts": {
+      "majorUnit": "319 422",
+      "decimalSeparator": ",",
+      "minorUnit": "",
+      "currency": {
+       "symbol": "₽",
+       "symbolPosition": 1,
+       "hasSpaceBetweenSymbolAndAmount": true
+      }
+     }
+    }
+   }
+  },
+  {
+   "date": "2026-12-13T00:00:00",
+   "nights": 2,
+   "transitNights": 1,
+   "filtersInfo": {
+    "mainHotelName": "Eagles Downtown Zahabia Resort & Aqua Park"
+   },
+   "mainHotel": {
+    "hotelId": 3933336,
+    "rating": 3
+   },
+   "holidayPrice": {
+    "paymentCurrency": {
+     "formatted": "320 201 ₽",
+     "raw": 320201.0,
+     "parts": {
+      "majorUnit": "320 201",
+      "decimalSeparator": ",",
+      "minorUnit": "",
+      "currency": {
+       "symbol": "₽",
+       "symbolPosition": 1,
+       "hasSpaceBetweenSymbolAndAmount": true
+      }
+     }
+    }
+   }
+  },
+  {
+   "date": "2026-12-13T00:00:00",
+   "nights": 2,
+   "transitNights": 1,
+   "filtersInfo": {
+    "mainHotelName": "Zen Resort Sahl Hashish by TBH Hotels"
+   },
+   "mainHotel": {
+    "hotelId": -930977595,
+    "rating": 4
+   },
+   "holidayPrice": {
+    "paymentCurrency": {
+     "formatted": "320 417 ₽",
+     "raw": 320416.09,
+     "parts": {
+      "majorUnit": "320 417",
+      "decimalSeparator": ",",
+      "minorUnit": "",
+      "currency": {
+       "symbol": "₽",
+       "symbolPosition": 1,
+       "hasSpaceBetweenSymbolAndAmount": true
+      }
+     }
+    }
+   }
+  }
+ ]
+}

@@ -1,0 +1,106 @@
+@startuml
+title Вариант 19. Парсер логов (Adapter + Facade + MVVM-интерфейс)
+skinparam classAttributeIconSize 0
+
+class LogEntry <<record>> {
+  +Timestamp: DateTime
+  +Level: LogLevel
+  +Message: string
+  +Source: string
+}
+
+interface ILogSource {
+  +Name: string
+  +Location: string
+  +SkippedLines: int
+  +Read(): IEnumerable<LogEntry>
+}
+
+interface ILogLineParser {
+  +FormatName: string
+  +ParseLine(line, source): LogEntry?
+  +IsIgnorable(line): bool
+}
+
+class JsonLogParser
+class KeyValueLogParser
+class CsvLogParser
+class LogFormatFactory {
+  +Create(format): ILogLineParser
+  +Detect(path): LogFormat
+}
+
+abstract class LineLogSource {
+  #ReadLines(): IEnumerable<string>
+}
+class FileLogSource
+class StdinLogSource
+class TextLogSource
+
+class VendorMonitoringService <<Adaptee>> {
+  +PageCount(pageSize): int
+  +FetchPage(page, pageSize): VendorRecord[]
+}
+class VendorServiceAdapter <<Adapter>>
+class PegastSearchAdapter <<Adapter>>
+
+enum SourceState {
+  Pending
+  Loading
+  Ok
+  Warning
+  Error
+}
+class SourceStatus {
+  +State: SourceState
+  +Count: int
+  +Skipped: int
+  +Message: string
+  +Enabled: bool
+}
+
+class LogParserFacade <<Facade>> {
+  +Sources: IReadOnlyList<SourceStatus>
+  +Entries: IReadOnlyList<LogEntry>
+  +Add(source): SourceStatus
+  +Load(progress): int
+  +Reload(status): SourceStatus
+  +Query(filter): IReadOnlyList<LogEntry>
+  +FilterByLevel(minLevel): IReadOnlyList<LogEntry>
+  +SaveReport(path, minLevel): string
+  +Export(path, entries, format): string
+}
+
+class MainViewModel <<WPF>>
+class SourceItemViewModel <<WPF>>
+class MainWindow <<WPF>>
+class StatusBadge <<WPF>> {
+  +State: SourceState
+}
+
+ILogLineParser <|.. JsonLogParser
+ILogLineParser <|.. KeyValueLogParser
+ILogLineParser <|.. CsvLogParser
+LogFormatFactory ..> ILogLineParser
+
+ILogSource <|.. LineLogSource
+LineLogSource <|-- FileLogSource
+LineLogSource <|-- StdinLogSource
+LineLogSource <|-- TextLogSource
+ILogSource <|.. VendorServiceAdapter
+ILogSource <|.. PegastSearchAdapter
+
+LineLogSource --> ILogLineParser
+VendorServiceAdapter --> VendorMonitoringService : адаптирует
+
+LogParserFacade o--> "*" SourceStatus
+SourceStatus --> ILogSource
+SourceStatus --> SourceState
+ILogSource ..> LogEntry
+
+MainWindow --> MainViewModel
+MainViewModel --> LogParserFacade
+MainViewModel o--> "*" SourceItemViewModel
+SourceItemViewModel --> SourceStatus
+MainWindow ..> StatusBadge
+@enduml
