@@ -38,9 +38,7 @@ dotnet run --project LogParser.Cli
 
 ## Диаграмма классов
 
-Исходник PlantUML: [`docs/class-diagram.puml`](docs/class-diagram.puml). Экспортируйте его в PNG (`docs/class-diagram.png`) и вставьте:
-
-![Диаграмма классов](docs/class-diagram.png)
+Она в презентации.
 
 ## Использованные паттерны
 
